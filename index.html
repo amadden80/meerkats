@@ -29,7 +29,7 @@
     </div>
 
     <script type="text/javascript">
-      $.get('/gifs.json').done((data) => {
+      $.get('./gifs.json').done((data) => {
         const gifs = JSON.parse(data).gifs;
         const $pictureWall = $('.gifs');
         gifs.forEach((url) => {
